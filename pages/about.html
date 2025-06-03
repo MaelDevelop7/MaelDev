@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Mael</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" href="../assets/moiEnCostard.jpg">
+  <link rel="stylesheet" href="../style/main.css" />
+</head>
+<body class="bg-gray-900 text-white">
+
+  <header class="bg-gray-800 shadow-md">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-400">MaelDev</div>
+      <ul class="flex space-x-6">
+        <li><a href="../index.html" class="hover:text-blue-300">Home</a></li>
+        <li><a href="about.html" class="text-blue-300 font-semibold">About</a></li>
+        <li><a href="projects.html" class="hover:text-blue-300">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-blue-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-4xl mx-auto py-12 px-4">
+  <div class="flex flex-col md:flex-row items-start gap-8 mb-12">
+    <img src="../assets/moiEnCostard.jpg" alt="Photo of Mael" class="w-40 h-40 object-cover rounded-xl shadow-lg border-4 border-blue-400" />
+    
+    <div>
+      <h1 class="text-4xl font-bold mb-6 text-blue-400">About Me</h1>
+      <p class="text-lg text-gray-300 mb-4">
+        I'm <strong>Mael</strong>, a web developer with a strong passion for building interactive digital experiences. I specialize in crafting intuitive and responsive interfaces using modern front-end technologies like <strong>TypeScript</strong>, <strong>React</strong>, and <strong>Tailwind CSS</strong>.
+      </p>
+      <p class="text-lg text-gray-300 mb-4">
+        My focus is on creating applications that not only look good but also deliver great user experience. I value clean code, performance, and maintainability in every project I work on.
+      </p>
+      <p class="text-lg text-gray-300 mb-4">
+        I’m also highly interested in tech ecosystems like web-based operating systems, productivity tools, and custom UI environments. One of my most ambitious projects is <strong>CloudOS</strong>, a virtual desktop environment built entirely in the browser.
+      </p>
+      <p class="text-lg text-gray-300">
+        I’m constantly learning and exploring new tools and frameworks to stay at the forefront of front-end development. Whether working on personal projects or collaborating with a team, I bring curiosity, creativity, and consistency to the table.
+      </p>
+    </div>
+  </div>
+</main>
+
+  <section class="mt-12">
+  <h2 class="text-2xl font-bold mb-4 text-blue-400">My Skillset</h2>
+  <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+    <canvas id="skillsChart" class="w-full max-w-md mx-auto"></canvas>
+  </div>
+</section>
+
+  <footer class="bg-gray-800 py-4 text-center text-sm text-gray-400">
+    &copy; 2025 Mael - All rights reserved
+  </footer>
+
+  <script type="module" src="../script/main.js"></script>
+  <script type="module" src="../script/chart.js"></script>
+
+</body>
+</html>
